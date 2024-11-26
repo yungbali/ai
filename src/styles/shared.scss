@@ -1,0 +1,50 @@
+@use "sass:color";
+
+// Colors
+$primary-color: #ffd700;
+$background-dark: #1a1a1a;
+$text-light: #ffffff;
+$error-color: #ff4d4d;
+
+// Mixins
+@mixin card-container {
+  background-color: rgba(26, 26, 26, 0.9);
+  border-radius: 15px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  padding: 20px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+@mixin button-primary {
+  background-color: $primary-color;
+  color: $background-dark;
+  border-radius: 12px;
+  padding: 10px 25px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(255, 215, 0, 0.3);
+    background-color: color.adjust($primary-color, $lightness: 10%);
+  }
+}
+
+@mixin input-field {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 215, 0, 0.2);
+  background-color: rgba(255, 255, 255, 0.05);
+  color: $text-light;
+  margin-bottom: 15px;
+
+  &:focus {
+    outline: none;
+    border-color: $primary-color;
+  }
+}

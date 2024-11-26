@@ -1,0 +1,54 @@
+:root {
+    /* Maxton Colors */
+    --maxton-primary: #00D061;
+    --maxton-secondary: #f8f9fa;
+    --maxton-dark: #1a1a1a;
+    --maxton-light: #ffffff;
+    --maxton-border: #e4e4e4;
+  }
+  
+  /* Enhanced Input Styles */
+  .form-control {
+    border-radius: 12px;
+    border: 1px solid var(--border-colors);
+    padding: 12px 16px;
+    font-size: 16px;
+    line-height: 24px;
+    color: var(--text-color);
+    background-color: var(--border-colors);
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    border-color: var(--maxton-primary);
+    box-shadow: 0 0 0 0.2rem rgba(0, 208, 97, 0.25);
+  }
+  
+  /* Enhanced Button Styles */
+  .btn-primary {
+    background: var(--maxton-primary);
+    border-radius: 12px;
+    padding: 12px 24px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  /* Card Styles from Maxton */
+  .card {
+    border-radius: 12px;
+    border: 1px solid var(--border-colors);
+    background: var(--box-color);
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Notification Styles */
+  .notification {
+    border-radius: 12px;
+    padding: 16px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+    background: var(--border-colors);
+  }
